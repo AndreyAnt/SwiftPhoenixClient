@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name             = "SwiftPhoenixClient"
   s.version          = "2.1.1"
   s.summary          = "Connect your Phoenix and iOS applications through WebSockets!"
-  s.swift_version    = "5.0"
+  s.swift_version    = "5.4"
   s.description  = <<-EOS
   SwiftPhoenixClient is a Swift port of phoenix.js, abstracting away the details
   of the Phoenix Channels library and providing a near identical experience
@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
   s.subspec "RxSwift" do |ss|
     ss.source_files = "Sources/RxSwiftPhoenixClient/"
     ss.dependency "SwiftPhoenixClient/Core"
-    ss.dependency "RxSwift", "~> 5.0"
+    ss.dependency "RxSwift", "~> 6.0"
   end
 
   s.subspec "Starscream" do |ss|
